@@ -1,1 +1,1 @@
-# LogicMojo-AI-ML-March26-cegemba
+# LogicMojo AI/ML Training.
