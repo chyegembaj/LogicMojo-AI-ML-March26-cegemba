@@ -1,0 +1,122 @@
+Q1. Understanding Feature Distributions (Iris Dataset)
+
+Context: Before training any ML model, we analyze feature distributions.
+
+Dataset: Load Iris dataset from sklearn
+
+Tasks:
+
+1. Extract feature matrix as NumPy array
+2. Compute:
+Mean
+Median
+Standard deviation
+Variance (for each feature)
+3. Identify:
+Which feature has highest variability and why it matters in ML
+4. Convert any one feature into shape (n,1) and explain why ML models expect this format
+
+Q2. Data Selection for Model Input
+
+Context: Models are trained on selective features, not full raw data.
+
+Dataset: Iris
+
+Tasks:
+
+Extract: First 100 samples Only last 2 features
+Use boolean masking: Select samples where petal length is greater than dataset mean
+Count selected samples
+Explain how this relates to feature-based filtering in ML
+
+Q3. Feature Scaling using NumPy (Very Important)
+
+Context: Most ML models require normalized data.
+
+Dataset: Iris (NumPy array)
+
+Tasks:
+
+1. Apply standardization:
+
+$$
+X' = \frac{X - \mu}{\sigma}
+$$
+	​2.
+
+Verify:
+Mean ≈ 0
+Std ≈
+on
+
+Q4. Dataset Understanding (Titanic Dataset)
+
+Context: First step in ML pipeline is dataset inspection.
+
+Dataset: Titanic (Seaborn)
+
+Tasks:
+
+Display: head(), tail() info(), describe()
+Identify: Missing values per column Numerical vs categorical features
+Explain: Why identifying feature types is important before modeling
+
+Q5. Filtering Data for Business Logic
+
+Context: Real ML problems require filtering relevant populations.
+
+Dataset: Titanic
+
+Tasks:
+
+Filter: Female passengers in 1st class
+Compute: Survival rate for this group
+Compare with overall survival rate
+Interpret: What insight can be used in ML feature engineering
+Q12. Feature Selection using Statistical Understanding
+
+Context: Not all features improve model performance.
+
+Dataset: Iris
+
+Tasks:
+
+Compute correlation matrix
+Identify highly correlated features
+Drop redundant features
+Explain: Impact on overfitting and model performance
+
+Q13. Custom Feature Transformation using apply()
+
+Context: Real ML requires custom logic transformation.
+
+Dataset: Titanic
+
+Tasks:
+
+Create age_group: Child / Adult / Senior
+Use .apply()
+Compute survival rate per group
+Interpret: Which segment has highest survival likelihood
+
+Q14. Error Analysis Simulation (Model Evaluation Thinking)
+
+Context: Understanding prediction errors is key in ML.
+
+Tasks:
+
+Generate 1000 random error values using NumPy
+Compute: Mean Standard deviation
+Identify outliers: Using mean ± 2*std
+Explain: What high variance means in model performance
+
+Q15. Business + ML Insight Problem (Tips Dataset)
+
+Context: Convert data analysis into decision-making
+
+Tasks:
+
+Create: tip_percentage
+Group by: day and time
+Identify: Highest revenue segment
+Provide: Recommendation for business strategy How ML model can use this insight
