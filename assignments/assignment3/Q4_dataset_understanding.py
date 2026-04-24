@@ -23,5 +23,6 @@ print(df[df['age'].isnull()])
 print(df[df['deck'].isna()])
 
 # Explain: Why identifying feature types is important before modeling
-## This helps in undersatnding the type of data for each feature so that the right preprocessing is applied.
+## This helps in undersatnding the type of data for each feature so that the right 
+# preprocessing is applied.
 #

@@ -73,6 +73,105 @@ Filter: Female passengers in 1st class
 Compute: Survival rate for this group
 Compare with overall survival rate
 Interpret: What insight can be used in ML feature engineering
+
+#%% md
+Q6. Handling Missing Data (Critical ML Step)
+
+Context: Models cannot handle null values.
+
+Dataset: Titanic
+
+Tasks:
+
+1. Fill missing age using median
+2. Fill missing embarked using mode
+3. Drop deck column
+4. Explain: Why different strategies are used for different columns
+
+#%% md
+Q7. Feature Engineering for Model Improvement
+
+Context: Raw data is rarely useful—features must be created.
+
+Dataset: Titanic
+
+Tasks:
+
+1. Create:
+family_size = sibsp + parch + 1
+2. Create:
+is_alone (binary feature)
+3. Compute survival rate by is_alone
+4. Explain:
+Why engineered features improve ML models
+
+#%% md
+Q8. Group-Based Insights (Customer Segmentation Logic)
+
+Context: ML models often depend on aggregated patterns.
+
+Dataset: Tips
+
+Tasks:
+
+1. Compute:
+Average tip by day
+Total bill by gender
+2. Create new feature:
+tip_percentage
+3. Identify:
+Which day has highest tipping behavior
+4. Explain:
+How this helps in segmentation models
+
+Q9. Advanced Filtering + Subsetting
+
+Context: Training data is often filtered based on business rules.
+
+Dataset: Tips
+
+Tasks:
+
+1. Filter:
+total_bill > 20 AND tip < 3
+2. Select only relevant columns
+3. Analyze:
+Is this segment under-tipping?
+4. Explain:
+How such filtering helps anomaly detection
+
+Q10. Data Transformation for Model Input (NumPy)
+
+Context: ML models require structured numeric arrays.
+
+Tasks:
+
+1. Create two arrays of shape (3,2)
+2. Perform:
+Vertical stacking
+Horizontal stacking
+3. Reshape into (2,6)
+4. Explain:
+Why reshaping is required in ML pipelines
+
+#%% md
+Q11. End-to-End ML Preprocessing Pipeline (Titanic)
+
+Context: Prepare dataset for ML model training
+
+Tasks:
+
+1. Load dataset
+2. Handle missing values
+3. Encode categorical variables (sex, embarked)
+4. Normalize numerical features
+5. Convert to NumPy array
+
+Output:
+
+Final feature matrix ready for model training
+
+
 Q12. Feature Selection using Statistical Understanding
 
 Context: Not all features improve model performance.

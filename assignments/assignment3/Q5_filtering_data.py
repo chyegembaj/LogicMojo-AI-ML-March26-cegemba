@@ -22,4 +22,6 @@ overall_survival_rate = df['survived'].mean()
 print(overall_survival_rate)
 
 # Interpret: What insight can be used in ML feature engineering
+#Engineered interaction features are better and can improve model performance by cpaturing non-linear
+#relationship
 

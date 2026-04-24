@@ -24,3 +24,5 @@ print(df.groupby('is_alone')['survived'].mean())
 
 # 4. Explain:
 # Why engineered features improve ML models
+#Engineered features improve ML models because they turn raw data into clearer, 
+#more meaningful signals that models can learn from more easily.

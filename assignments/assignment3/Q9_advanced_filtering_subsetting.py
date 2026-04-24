@@ -19,6 +19,9 @@ segment[['total_bill', 'tip', 'sex', 'day']]
 # Is this segment under-tipping?
 print(segment['tip'].mean())
 print(df['tip'].mean())
+#The segment tipping is less than the average  tipping
 
 # 4. Explain:
 # How such filtering helps anomaly detection
+#Filering helps anomaly detection by narrowing the data to unusual patterns,
+#making it easier to identify, analyze, and model deviations from normal behaviour

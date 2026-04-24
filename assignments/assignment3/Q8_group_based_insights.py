@@ -25,7 +25,12 @@ print(df.head())
 
 # 3. Identify:
 # Which day has highest tipping behavior
-# Sunday has highest tipping behaviour
+highest_tipping_day = df.groupby('day')['tip_percentage'].mean()
+print(highest_tipping_day )
+
+# Friday has highest tipping behaviour
 
 # 4. Explain:
 # How this helps in segmentation models
+#Group-based insights help segmentation models by turning raw data into stable,
+#behavior focused patterns that make it easier to identify and act on meaningfull customer groups

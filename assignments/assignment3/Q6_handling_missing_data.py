@@ -23,8 +23,14 @@ df['embarked'] = df['embarked'].fillna(df['embarked'].mode()[0])
 
 
 # 3. Drop deck column
-print(df.head())
 df_deck = df.drop(columns=['deck'])
 print(df_deck)
 
 # 4. Explain: Why different strategies are used for different columns
+# Median is used for age because it is a numerical data
+
+# Mode is used for embarked because it is a categorical data. You cannot apply median or mean 
+#on categorical data
+
+#Deck column is dropped because it has too many missing data.Filling it might introduce 
+#incorrect assumption
